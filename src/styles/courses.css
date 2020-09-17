@@ -1,0 +1,44 @@
+.courses-container {
+    margin-top: var(--medium-gap);
+    border-collapse: collapse;
+}
+
+.courses-container__card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course__cover {
+    background-image: url("https://s3.us-east-1.amazonaws.com/jarvis-caelum/C-sharp-e-Orientac%CC%A7a%CC%83o-a-Objetos-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 20vh;
+}
+
+.course__details {
+    width: 90%;
+
+    background-image: url('../resources/right_arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: left var(--low-gap) bottom 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    border: 1px solid black;
+
+    transform: translateY(-30%);
+    padding: var(--low-gap);
+}
+
+.course__details > span {
+    align-self: flex-end;
+    margin-top: var(--low-gap);
+    font-size: 0.8rem;
+}

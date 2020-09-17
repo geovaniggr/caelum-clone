@@ -1,0 +1,40 @@
+.instructors {
+    margin-top: var(--medium-gap);
+    width: 100%;
+}
+
+.instructors__card{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instructors__card::before{
+    content: "";
+    background-image: url("../resources/next.svg");
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.instructors__card::after{
+    content: "";
+    background-image: url("../resources/back.svg");
+    height: 20px;
+    width: 20px;
+    color: var(--primary-dark-color);
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.instructors__photo {
+    border-top: 5px solid black;
+    width: 60%;
+    filter: grayscale(1);
+}
