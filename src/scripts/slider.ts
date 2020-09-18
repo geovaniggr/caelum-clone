@@ -1,7 +1,6 @@
 (function () {
     let index = 0;
     let widthOfTranslate = 0;
-    let typeOfTranslate = "";
     let timeout: number = 0;
     const delay = 300;
 
@@ -10,16 +9,11 @@
     const previousButton = document.querySelector('.instructors__slider--back') as HTMLElement;
 
     const getClientWidth = () => {
-        if((images[0].querySelector('.instructors__photo') as HTMLImageElement).width > 200){
-            widthOfTranslate = 60;
-            typeOfTranslate = "vw"
-        } else {
-            widthOfTranslate = 200;
-            typeOfTranslate = "px"
-        } 
-    }
+        const firstImageOfCard =  images[0].querySelector('.instructors__photo') as HTMLImageElement;
+        widthOfTranslate = firstImageOfCard.width;
+   }
 
-    const translate = (element: HTMLElement) => element.style.transform = `translateX(${(-index * widthOfTranslate)}${typeOfTranslate})`;
+    const translate = (element: HTMLElement) => element.style.transform = `translateX(${(-index * widthOfTranslate)}px)`;
 
     nextButton.addEventListener('click', () => {
         index++;
