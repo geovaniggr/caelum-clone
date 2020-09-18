@@ -10,7 +10,6 @@
     const previousButton = document.querySelector('.instructors__slider--back') as HTMLElement;
 
     const getClientWidth = () => {
-        console.log("executando")
         if((images[0].querySelector('.instructors__photo') as HTMLImageElement).width > 200){
             widthOfTranslate = 60;
             typeOfTranslate = "vw"

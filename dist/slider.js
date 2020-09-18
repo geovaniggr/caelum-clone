@@ -9,7 +9,6 @@
     const nextButton = document.querySelector('.instructors__slider--next');
     const previousButton = document.querySelector('.instructors__slider--back');
     const getClientWidth = () => {
-        console.log("executando");
         if (images[0].querySelector('.instructors__photo').width > 200) {
             widthOfTranslate = 60;
             typeOfTranslate = "vw";
