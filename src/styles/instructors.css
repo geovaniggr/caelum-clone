@@ -26,7 +26,6 @@
   position: relative;
   justify-content: center;
   overflow: hidden;
-  width: 100vw;
 }
 
 .instructors__slider--next,
