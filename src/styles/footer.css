@@ -9,17 +9,18 @@
 
 .footer__contact--sp,
 .footer__contact--rj,
-.footer__contact--bsb {
+.footer__contact--bsb,
+.footer__contact--phones {
     margin-bottom: var(--medium-gap);
     display: grid;
     grid-template-columns: max(50px, 30%) 1fr;
 }
 
-.footer__contact--phones {
+/* .footer__contact--phones {
     display: grid;
     flex-wrap: wrap;
     grid-template-columns: 50% 1fr;
-}
+} */
 
 .footer__title {
     font-size: 2rem;
@@ -33,7 +34,6 @@
 
 .footer__info {
     align-self: center;
-    text-align: center;
 }
 
 .footer__navigation {
@@ -116,7 +116,14 @@
     background-image: url('../resources/linkedin.svg');
 }
 
-@media (max-width: 360px){
+@media(max-width: 630px){
+    .footer__info--verbose {
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 410px){
     .footer__title {
         font-size: 1.25rem;
     }
