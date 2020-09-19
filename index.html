@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cópia</title>
+    <title>Caelum</title>
     <meta name="description"
         content="Cursos de Programação, design e negócios em São Paulo, Rio de Janeiro e Brasilia. 15 anos de transformação de carreiras de tecnologia">
-    <link rel="shortcut icon" href="src/imgs/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- build:css app.min.css -->
     <link rel="stylesheet" href="src/styles/index.css">
     <link rel="stylesheet" href="src/styles/header.css">
     <link rel="stylesheet" href="src/styles/menu.css">
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="src/styles/branding.css">
     <link rel="stylesheet" href="src/styles/instructors.css">
     <link rel="stylesheet" href="src/styles/footer.css">
+    <!-- endbuild -->
 </head>
 
 <body>
@@ -122,8 +124,8 @@
                         <img src="src/resources/instrutor_wanderson.jpg" alt="Instrutor da Alura Nico Steppat"
                             class="instructors__photo --photo-none">
                         <div class="instructors__info">
-                            <strong>Wanderson Macedo</strong>
-                            <p>Instrutor de Javascript</p>
+                            <strong>Wanderson Macêdo</strong>
+                            <p>Instrutor de Typescript</p>
                         </div>
                     </a>
                 </div>
@@ -186,10 +188,12 @@
         <div class="home__separator" style="border-color: black;"></div>
         <span class="footer__copyright">Caelum. Escola de Tecnologia. Cursos online ao vivo</span>
     </footer>
-    <script src="dist/utils.js"></script>
-    <script src="dist/index.js"></script>
-    <script src="dist/courses.js"></script>
-    <script src="dist/slider.js"></script>
+    <!-- build:js app.min.js -->
+    <script src="src/js/utils.js"></script>
+    <script src="src/js/index.js"></script>
+    <script src="src/js/courses.js"></script>
+    <script src="src/js/slider.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
