@@ -17,6 +17,7 @@
     background-position: center;
 
     height: calc(100vh - 220px);
+    min-height: 400px;
     width: 100%;
     padding: var(--low-gap);
 
@@ -45,6 +46,10 @@
     font-size: 1.5rem;
 }
 
+.--tablet-version{
+    display: none;
+}
+
 .begin__info {
     color: var(--primary-color);
     font-weight: bold;
@@ -60,4 +65,80 @@
     .begin__container {
         width: 400px;
     }
+}
+
+@media (min-width: 780px){
+
+    .--tablet-version {
+        color: white;
+        margin: var(--low-gap) 0 ;
+        border-color: white;
+        display: block;
+        width: 19rem;
+        font-size: max(1.25vw, 1rem);
+    }
+
+    .--tablet-version:hover{
+        color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+
+    .home__title{
+        position: absolute;
+        top: calc(var(--high-gap) * 2);
+        margin: 0;
+        left: 64px;
+        z-index: 5;
+        color: var(--primary-color);
+        font-size: 0.85rem;
+        font-weight: bold;
+        line-height: 1;
+    }
+    
+    .home__welcome {
+        padding-top: 14rem;
+        padding-left: var(--high-gap);
+        padding-right: var(--high-gap);
+        padding-bottom: var(--medium-gap);
+        height: 90vh;
+    }
+
+    .begin__info{
+        font-size: 1.25rem;
+        width: calc(60vw, 800px);
+        text-align: start;
+        margin: 0;
+    }
+
+    .begin__container {
+        width: min(50vw, 600px);
+    }
+
+    .caelum-emphasis {
+        padding: 0;
+    }
+
+    .begin__container-phrase{
+        font-size: min(5vw, 3.5rem);
+        margin-bottom: calc(var(--low-gap) / 2);
+    }
+    .begin__container-sub_phrase{
+        font-size: min(3vw, 3rem);
+    }
+
+    .find-courses {
+        display: none;
+    }
+}
+
+@media (min-width: 1300px){
+
+    .home__title {
+        left: var(--biggest-gap);
+    }
+
+    /* .home__welcome {
+        padding-left: var(--biggest-gap);
+        padding-right: var(--biggest-gap);
+    } */
 }

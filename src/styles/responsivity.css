@@ -1,0 +1,6 @@
+@media (min-width: 1300px){
+    .container--big {
+        padding-left: var(--biggest-gap);
+        padding-right: var(--biggest-gap);
+    }
+}

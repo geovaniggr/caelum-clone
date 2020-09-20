@@ -21,3 +21,37 @@
 
     cursor: pointer;
 }
+
+
+@media (min-width: 780px){
+
+    .header {
+        padding: var(--medium-gap) var(--high-gap);
+        position: absolute;
+        width: 100%;
+        top:0;
+
+        z-index: 8;
+    }
+
+    .header__content {
+        margin: 0;
+    }
+
+    .header__logo {
+        background-image: url('../resources/logo_tablet.svg');
+        height: 40px;
+        width: 120px;
+    }
+
+    .header__menu {
+        background-image: url('../resources/menu_toggle_tablet.svg');
+    }
+}
+/* 
+@media (min-width: 1300px){
+    .header {
+        padding-left: var(--biggest-gap);
+        padding-right: var(--biggest-gap);
+    }
+} */

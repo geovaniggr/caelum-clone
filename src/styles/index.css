@@ -8,6 +8,8 @@
     --high-gap: 4em;
 
     --primary-font: 'Open Sans', sans-serif;
+
+    --biggest-gap: calc(50vw - 640px);
 }
 
 .caelum-emphasis {
@@ -62,3 +64,4 @@ li {
 a {
     text-decoration: none;
 }
+
