@@ -1,6 +1,5 @@
 .courses-container {
     margin-top: var(--medium-gap);
-    border-collapse: collapse;
 }
 
 .courses-container__card {
@@ -41,4 +40,24 @@
     align-self: flex-end;
     margin-top: var(--low-gap);
     font-size: 0.8rem;
+}
+
+@media (min-width: 768px){
+    .courses-container {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 20px;
+        justify-content: center;
+    }
+    .courses-button {
+        max-width: 400px;
+        margin: var(--medium-gap) auto;
+    }
+
+    .--branding-slider, .--courses-branding {
+        display: none;
+    }
+
 }
