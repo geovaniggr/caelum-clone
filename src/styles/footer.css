@@ -1,0 +1,134 @@
+.footer {
+    background-color: var(--primary-color);
+    padding: var(--low-gap);
+}
+/* 
+.footer__contact, .footer__navigation {
+    padding: var(--low-gap);
+} */
+
+.footer__contact--sp,
+.footer__contact--rj,
+.footer__contact--bsb,
+.footer__contact--phones {
+    margin-bottom: var(--medium-gap);
+    display: grid;
+    grid-template-columns: max(50px, 30%) 1fr;
+}
+
+/* .footer__contact--phones {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 50% 1fr;
+} */
+
+.footer__title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.footer__title--small {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.footer__info {
+    align-self: center;
+}
+
+.footer__navigation {
+    margin-top: var(--medium-gap);
+}
+
+.footer__option {
+    text-transform: uppercase;
+    line-height: 2rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 0.85px;
+    padding: var(--low-gap) 0px;
+    border-top: 1px solid black;
+}
+
+.footer__subscribe{
+    position: relative;
+}
+
+.footer__subscribe > .footer__option {
+    display: block;
+}
+
+.footer__input--email {
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 0 var(--low-gap);
+    height: 2.5rem;
+    width: 60vw;
+}
+
+.footer__input--email::placeholder{
+    color: black;
+}
+
+.footer__input--button {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: none;
+    height: 2.5rem;
+    width: 5rem;
+    color: white;
+    background-color: black;
+}
+
+.footer__copyright {
+    margin-top: var(--low-gap);
+    display: block;
+    text-align: center;
+}
+
+.footer__socials {
+    margin: var(--medium-gap) 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.socials--instagram,
+.socials--linkedin,
+.socials--twitter {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+    width: 30px;
+}
+
+.socials--instagram {
+    background-image: url('../resources/instagram.svg');
+}
+
+.socials--twitter{
+    background-image: url('../resources/twitter.svg');
+}
+
+.socials--linkedin {
+    background-image: url('../resources/linkedin.svg');
+}
+
+@media(max-width: 630px){
+    .footer__info--verbose {
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 410px){
+    .footer__title {
+        font-size: 1.25rem;
+    }
+
+    .footer__title--small {
+        font-size: 1rem;
+    }
+}

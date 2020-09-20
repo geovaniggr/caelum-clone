@@ -1,0 +1,23 @@
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem;
+}
+
+.header__logo {
+    background-image: url('../resources/logo_mobile.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 80px;
+}
+
+.header__menu {
+    background-image: url('../resources/menu_toggle_mobile.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+
+    cursor: pointer;
+}
