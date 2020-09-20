@@ -15,3 +15,34 @@
 .branding-info__description {
     flex: 2
 }
+
+
+@media (min-width: 768px){
+    .branding-info {
+        padding-top: var(--low-gap);
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 0;
+        border: 1px solid black;
+        border-bottom: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .branding-info__container {
+        flex-direction: column;
+    }
+
+    .branding-info__container {
+        width: 30%;
+    }
+
+    .branding-info__mark {
+        font-size: 3.5rem;
+    }
+
+    .branding-info__description {
+        width: 80%;
+    }
+
+}
