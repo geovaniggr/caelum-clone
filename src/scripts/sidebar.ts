@@ -18,7 +18,7 @@
             position: "fixed",
             top: "0",
             backgroundColor: "rgba(0, 0, 0, 0.5)",
-            zIndex: "5",
+            zIndex: "6",
         }
 
         const div = document.createElement('div');
