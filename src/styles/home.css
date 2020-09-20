@@ -59,8 +59,6 @@
     margin: 0 auto;
 }
 
-
-
 @media (min-width: 430px){
     .begin__container {
         width: 400px;
@@ -100,7 +98,7 @@
         padding-left: var(--high-gap);
         padding-right: var(--high-gap);
         padding-bottom: var(--medium-gap);
-        height: 90vh;
+        height: max(98vh, 600px);
     }
 
     .begin__info{
