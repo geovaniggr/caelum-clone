@@ -62,7 +62,7 @@
     </header>
     <main class="home">
         <h1 class="home__title">Escola de Técnologia</h1>
-        <section class="home__welcome container--big begin">
+        <section class="home__welcome begin">
             <div class="begin__container">
                 <h2 class="begin__container-phrase caelum-emphasis"> É para quem </h2>
                 <p class="begin__container-sub_phrase caelum-emphasis"> #Desenvolve </p>
@@ -73,10 +73,9 @@
             </p>
         </section>
         <a ref="#" class="home__button find-courses">Cursos online ao vivo</a>
-        <div class="home__separator">
-            <h3 class="home__separator--title"> Próximos Cursos</h3>
-        </div>
-        <section class="courses-container">
+        <div class="home__separator"> </div>
+        <h3 class="home__separator--title"> Próximos Cursos</h3>
+        <section class="courses-container ">
             <a class="courses-container__card" href="#">
                 <div class="course__cover"></div>
                 <article class="course__details">
@@ -88,57 +87,60 @@
         </section>
         <a href="#" class="home__button courses-button">Encontre seu curso</a>
         <div class="home__separator --courses-branding"></div>
-        <section class="branding-info">
-            <div class="branding-info__container">
-                <strong class="branding-info__mark">16</strong>
-                <p class="branding-info__description">Anos de experiência em ensino de tecnologia no Brasil</p>
-            </div>
-            <div class="branding-info__container">
-                <strong class="branding-info__mark">38K</strong>
-                <p class="branding-info__description">pessoas encontraram respostas em nossa salas de aula</p>
-            </div>
-            <div class="branding-info__container">
-                <strong class="branding-info__mark">222K</strong>
-                <p class="branding-info__description">horas de trocas de conhecimento em aulas</p>
-            </div>
-        </section>
-        <div class="home__separator --branding-slider"></div>
-        <section class="instructors">
-            <div class="instructors__slider">
-                <div class="instructor__wrapper">
-                    <a href="#" class="instructors__card">
-                        <img src="src/resources/instrutor_nico.jpg" alt="Instrutor da Alura Nico Steppat"
-                            class="instructors__photo">
-                        <div class="instructors__info">
-                            <strong>Nico Steppat</strong>
-                            <p>Instrutor de Java</p>
-                        </div>
-                    </a>
-                    <a href="#" class="instructors__card">
-                        <img src="src/resources/instrutor_gabs.jpg" alt="Instrutor da Alura Nico Steppat"
-                            class="instructors__photo">
-                        <div class="instructors__info">
-                            <strong>Gabs Ferreira</strong>
-                            <p>Instrutor de C#</p>
-                        </div>
-                    </a>
-                    <a href="#" class="instructors__card --card-none">
-                        <img src="src/resources/instrutor_wanderson.jpg" alt="Instrutor da Alura Nico Steppat"
-                            class="instructors__photo --photo-none">
-                        <div class="instructors__info">
-                            <strong>Wanderson Macêdo</strong>
-                            <p>Instrutor de Typescript</p>
-                        </div>
-                    </a>
+        <div class="border-wrapper ">
+            <section class="branding-info">
+                <div class="branding-info__container">
+                    <strong class="branding-info__mark">16</strong>
+                    <p class="branding-info__description">Anos de experiência em ensino de tecnologia no Brasil</p>
                 </div>
-                <img src="src/resources/next.svg" class="instructors__slider--next">
-                <img src="src/resources/back.svg" class="instructors__slider--back">
-            </div>
-        </section>
-        <a href="#" class="home__button">Nossa Equipe</a>
+                <div class="branding-info__container">
+                    <strong class="branding-info__mark">38K</strong>
+                    <p class="branding-info__description">pessoas encontraram respostas em nossa salas de aula</p>
+                </div>
+                <div class="branding-info__container">
+                    <strong class="branding-info__mark">222K</strong>
+                    <p class="branding-info__description">horas de trocas de conhecimento em aulas</p>
+                </div>
+            </section>
+            <div class="home__separator --branding-slider"></div>
+            <section class="instructors">
+                <div class="instructors__slider">
+                    <div class="instructor__wrapper">
+                        <a href="#" class="instructors__card">
+                            <img src="src/resources/instrutor_nico.jpg" alt="Instrutor da Alura Nico Steppat"
+                                class="instructors__photo">
+                            <div class="instructors__info">
+                                <strong>Nico Steppat</strong>
+                                <p>Instrutor de Java</p>
+                            </div>
+                        </a>
+                        <a href="#" class="instructors__card">
+                            <img src="src/resources/instrutor_gabs.jpg" alt="Instrutor da Alura Nico Steppat"
+                                class="instructors__photo">
+                            <div class="instructors__info">
+                                <strong>Gabs Ferreira</strong>
+                                <p>Instrutor de C#</p>
+                            </div>
+                        </a>
+                        <a href="#" class="instructors__card --card-none">
+                            <img src="src/resources/instrutor_wanderson.jpg" alt="Instrutor da Alura Nico Steppat"
+                                class="instructors__photo --photo-none">
+                            <div class="instructors__info">
+                                <strong>Wanderson Macêdo</strong>
+                                <p>Instrutor de Typescript</p>
+                            </div>
+                        </a>
+                    </div>
+                    <img src="src/resources/next.svg" class="instructors__slider--next">
+                    <img src="src/resources/back.svg" class="instructors__slider--back">
+                </div>
+            </section>
+            <a href="#" class="home__button --our-team">Nossa Equipe</a>
+        </div>
     </main>
     <footer class="footer">
         <ul class="footer__contact">
+            <li class="footer__option division--title">Nossas Unidades</li>
             <li class="footer__contact--sp">
                 <span class="footer__title">SP</span>
                 <p class="footer__info">R. Vergueiro, 3185, 8º andar</p>
@@ -173,21 +175,22 @@
             <li class="footer__option"><a href="#">Sobre Nós</a></li>
             <li class="footer__option"><a href="#">Equipe</a></li>
             <li class="footer__option"><a href="#">Contato</a></li>
-            <li>
-                <form action="POST" class="footer__subscribe">
-                    <label for="email" class="footer__option">Receba nossas Novidades</label>
-                    <input type="email" class="footer__input--email" placeholder="exemplo@email.com" name="email" >
-                    <button class="footer__input--button"> OK </button>
-                </form>
-            </li>
         </ul>
+        <div class="footer__newsletter">
+            <form action="POST" class="footer__subscribe">
+                <label for="email" class="footer__option">Receba nossas Novidades</label>
+                <input type="email" class="footer__input--email" placeholder="exemplo@email.com" name="email">
+                <button class="footer__input--button"> OK </button>
+            </form>
+        </div>
         <ul class="footer__socials">
             <li><a href="#" class="socials--instagram"></a></li>
             <li><a href="#" class="socials--twitter"></a></li>
             <li><a href="#" class="socials--linkedin"></a></li>
         </ul>
-        <div class="home__separator" style="border-color: black;"></div>
-        <span class="footer__copyright">Caelum. Escola de Tecnologia. Cursos online ao vivo</span>
+        <div class="home__separator --footer" style="border-color: black;">
+            <span class="footer__copyright">Caelum. Escola de Tecnologia. Cursos online ao vivo</span>
+        </div>
     </footer>
     <!-- build:js app.min.js -->
     <script src="./src/js/utils.js"></script>
