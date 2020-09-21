@@ -61,11 +61,7 @@
 @media (min-width: 768px){
 
   .instructors {
-    margin: 1.5rem;
-    padding-bottom: calc(var(--high-gap) * 1.25);
     margin-top: 0;
-    border: 1px solid black;
-    border-top: 0;
   }
 
   .instructors__slider--next, .instructors__slider--back {
@@ -73,6 +69,7 @@
   }
 
   .instructors__card {
+    /* needs to be simetric with .brading-info__container */
     width: 30%;
   }
 
@@ -83,8 +80,6 @@
 
   .instructor__wrapper {
     overflow: initial;
-    padding-left: 1rem;
-    padding-right: 1rem;
     width: 100%;
     justify-content: space-around;
   }

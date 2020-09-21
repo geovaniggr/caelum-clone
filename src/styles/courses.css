@@ -44,8 +44,8 @@
 
 @media (min-width: 768px){
     .courses-container {
-        max-width: 1200px;
-        margin: auto;
+        max-width: 1440px;
+        margin: 0 var(--medium-gap);
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         gap: 20px;
