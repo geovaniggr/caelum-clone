@@ -1,67 +1,70 @@
 :root {
-    --primary-color: #fbf300;
-    --primary-dark-color: #8a871b;
-    --secondary-color: #898989;
+  --primary-color: #fbf300;
+  --primary-dark-color: #8a871b;
+  --secondary-color: #898989;
 
-    --low-gap: 1rem;
-    --medium-gap: 2rem;
-    --high-gap: 4em;
+  --low-gap: 1rem;
+  --medium-gap: 2rem;
+  --high-gap: 4em;
 
-    --primary-font: 'Open Sans', sans-serif;
+  --primary-font: "Open Sans", sans-serif;
 
-    --biggest-gap: calc(50vw - 640px);
+  --biggest-gap: calc(50vw - 640px);
+}
+
+@media (min-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .caelum-emphasis {
-    display: inline-block;
-    background-color: var(--primary-color);
-    padding: 0.25rem;
+  display: inline-block;
+  background-color: var(--primary-color);
+  padding: 0.25rem;
 
-    font-family: var(--primary-font);
-    text-transform: uppercase;
-    font-weight: 900;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 .home__separator {
-    width: 90%;
-    margin: 0 auto;
-    border-top: 1px solid var(--secondary-color);
+  width: 90%;
+  margin: 0 auto;
+  border-top: 1px solid var(--secondary-color);
 }
 
-.home__separator--title {
-    margin: var(--medium-gap) 0;
-    font-size: 1.5rem;
-    font-weight: 900;
-}
+
 
 .home__button {
-    display: block;
-    margin: 1.5rem;
-    padding: 1rem 1.5rem;
+  display: block;
+  margin: 1.5rem;
+  padding: 1rem 1.5rem;
 
-    border: 3px solid black;
-    text-align: center;
-    font-weight: bold;
+  border: 3px solid black;
+  text-align: center;
+  font-weight: bold;
 }
 
 .home__button:hover {
-    border-color: var(--secondary-color);
-    color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 * {
-    font-family: var(--primary-font);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: black;
+  font-family: var(--primary-font);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-

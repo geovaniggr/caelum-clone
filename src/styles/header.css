@@ -48,10 +48,9 @@
         background-image: url('../resources/menu_toggle_tablet.svg');
     }
 }
-/* 
-@media (min-width: 1300px){
-    .header {
-        padding-left: var(--biggest-gap);
-        padding-right: var(--biggest-gap);
+
+@media (min-width: 1440px){
+    .header__content {
+        justify-content: space-around;
     }
-} */
+}

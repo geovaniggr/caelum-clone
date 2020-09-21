@@ -10,6 +10,12 @@
     margin-bottom: var(--low-gap);
 }
 
+.home__separator--title {
+  margin: var(--medium-gap);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
 .home__welcome {
     background-image: url('../resources/home_background.jpg');
     background-repeat: no-repeat;
@@ -129,14 +135,12 @@
     }
 }
 
-@media (min-width: 1300px){
-
+@media (min-width: 1440px){
     .home__title {
-        left: var(--biggest-gap);
+        display: none;
     }
 
-    /* .home__welcome {
-        padding-left: var(--biggest-gap);
-        padding-right: var(--biggest-gap);
-    } */
+    .home__welcome {
+        align-items: center;
+    }
 }
