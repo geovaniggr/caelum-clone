@@ -5,10 +5,17 @@
     let timeout = 0;
     let interval = 0;
     const delay = 300;
+    const MAX_WIDTH_OF_SLIDER_APPEARANCE = 768;
     const images = document.querySelectorAll('.instructors__card');
     const nextButton = document.querySelector('.instructors__slider--next');
     const previousButton = document.querySelector('.instructors__slider--back');
     const getClientWidth = () => {
+        if (document.documentElement.clientWidth > MAX_WIDTH_OF_SLIDER_APPEARANCE) {
+            clearInterval(interval);
+            index = 0;
+            images.forEach(translate);
+            return;
+        }
         const firstImageOfCard = images[0].querySelector('.instructors__photo');
         widthOfTranslate = firstImageOfCard.width;
         if (widthOfTranslate > 250) {
