@@ -65,6 +65,7 @@
 }
 
 .footer__input--button {
+  cursor: pointer;
   position: absolute;
   bottom: 0;
   font-size: 0.8rem;
@@ -110,6 +111,7 @@
   background-image: url("../resources/linkedin.svg");
 }
 
+/** Mobile **/
 @media (max-width: 630px) {
   .footer__info--verbose {
     margin: 0 auto;
@@ -126,6 +128,7 @@
   }
 }
 
+/** Tablet & Desktop **/
 @media (min-width: 900px) {
   .footer {
     padding: var(--medium-gap);
@@ -179,4 +182,12 @@
   .footer__option.division--title {
       display: block;
   }
+}
+
+@media (min-width: 900px) and (max-width: 1200px){
+  .footer__contact--phones {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 1fr;
+  }
+
 }
