@@ -44,6 +44,7 @@
 
 @media (min-width: 768px){
     .courses-container {
+        width: 90vw;
         max-width: 1440px;
         margin: 0 var(--medium-gap);
         display: grid;
